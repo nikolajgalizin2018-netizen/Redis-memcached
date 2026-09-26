@@ -42,7 +42,7 @@ sudo systemctl start memcached
 sudo systemctl status memcached
 Скриншот systemctl status memcached:
 
-https://task2_memcached_status.png/
+![Статус memcached](task2_memcached_status.png)
 
 Видно, что сервис находится в состоянии active (running) — memcached запущен и работает.
 
@@ -59,7 +59,7 @@ echo "--- через 5 секунд ---"
 printf 'get user:1\r\nget user:2\r\nget city:msk\r\n' | nc -q 1 127.0.0.1 11211
 Скриншот с результатом:
 
-https://task3_memcached_ttl.png/
+![TTL в memcached](task3_memcached_ttl.png)
 
 На скриншоте видно, что:
 
@@ -89,7 +89,7 @@ for key in $(redis-cli KEYS '*'); do
 done
 Скриншот операции:
 
-https://task4_redis.png/
+![Запись и чтение в Redis](task4_redis.png)
 
 На скриншоте видно:
 
